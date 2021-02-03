@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <script src="script.js" defer></script>
+  <title>Smeg</title>
+</head>
+
+<body data-title="cart">
+  <div class="wrapper">
+    <div class="content">
+      <div class="burger-overlay"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <div class="header-box-one">
+              <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="" class="header-logo-img">
+              </a>
+              <a href="tel:+375291586935" class="header-phone">+375(29)12345678</a>
+              <div class="header-location">Минск</div>
+            </div>
+            <div class="header-box-two">
+              <form class="header-search">
+                <input type="text" class="header-input" placeholder="Поиск">
+                <button class="header-search-btn">
+                  <img src="images/magnifier.svg" alt="" class="header-search-img">
+                </button>
+              </form>
+              <a href="cart.html" class="header-cart">
+                <div class="header-cart-img">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C39.9871 8.95961 31.0404 0.0128906 20 0ZM20 38.3334C9.87477 38.3334 1.66664 30.1252 1.66664 20C1.66664 9.87477 9.87477 1.66664 20 1.66664C30.1252 1.66664 38.3334 9.87477 38.3334 20C38.3219 30.1205 30.1205 38.3219 20 38.3334Z"
+                      fill="white" />
+                    <path
+                      d="M25.6509 15.8335L24.1417 9.79846L22.5251 10.2018L23.9326 15.8335H16.0675L17.475 10.2018L15.8584 9.79846L14.3492 15.8335H10V17.5001H11.785L13.3434 27.6267C13.4059 28.0332 13.7555 28.3332 14.1667 28.3334H25.8334C26.2445 28.3332 26.5942 28.0332 26.6567 27.6267L28.215 17.5001H30V15.8335H25.6509ZM25.1184 26.6667H14.8816L13.4716 17.5001H26.5283L25.1184 26.6667Z"
+                      fill="white" />
+                    <path d="M17.5 19.1666H15.8334V25H17.5V19.1666Z" fill="white" />
+                    <path d="M20.8333 19.1666H19.1666V25H20.8333V19.1666Z" fill="white" />
+                    <path d="M24.1666 19.1666H22.5V25H24.1666V19.1666Z" fill="white" />
+                  </svg>
+                </div>
+                <output class="header-cart-count"></output>
+              </a>
+              <div class="header-burger">
+                <svg width="45" height="26" viewBox="0 0 45 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="1" x2="45" y2="1" stroke="white" stroke-width="2" />
+                  <line x1="13" y1="13" x2="45" y2="13" stroke="white" stroke-width="2" />
+                  <line y1="25" x2="45" y2="25" stroke="white" stroke-width="2" />
+                </svg>
+              </div>
+              <div class="header-menu">
+                <ul class="header-menu-list">
+                  <li class="header-list-item"><a href="category.html" class="header-list-item-link">Кухня</a></li>
+                  <li class="header-list-item"><a href="category.html" class="header-list-item-link">Ванная</a></li>
+                  <li class="header-list-item"><a href="category.html" class="header-list-item-link">Проф. оборудование</a></li>
+                  <li class="header-list-item"><a href="category.html" class="header-list-item-link">Прочее</a></li>
+                  <li class="header-list-item"><a href="#" class="header-list-item-link header-fade">О компании</a>
+                  </li>
+                  <li class="header-list-item"><a href="#" class="header-list-item-link header-fade">Поддержка</a></li>
+                  <li class="header-list-item"><a href="#" class="header-list-item-link header-fade">Для клиента</a></li>
+                  <li class="header-list-item"><a href="#" class="header-list-item-link header-fade">Контакты</a></li>
+                  <a href="tel:+375291586935" class="burger-phone">+375(29)12345678</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="cart">
+        <div class="container">
+          <div class="cart-title title">Корзина покупок</div>
+          <div class="cart-inner">
+        
+          </div>
+          <div class="cart-total">
+            <div class="cart-total-box">
+              Итого:
+              <span class="cart-total-count"></span>
+            </div>
+            <a href="#" class="cart-total-btn">Оформить</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-form-status"></div>
+        <div class="footer-title-inner">
+          <h3 class="footer-title">Узнай об акциях и новинках первым</h3>
+          <form id="footer-form" class="footer-email" data-server="server.php">
+            <input type="email" name="email" class="email-input" placeholder="Ваша почта" required>
+            <button class="email-btn" type="submit">
+              <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                  fill="white" />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="footer-phone-inner">
+          <a href="tel:+375291586935" class="footer-phone">+375(29)12345678</a>
+        </div>
+        <div class="footer-menu-inner">
+          <div class="footer-menu-box">
+            <div class="footer-menu-title">О компании</div>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">История</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Контакты</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Сотруднечество</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Партнёрство</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu-box">
+            <div class="footer-menu-title">Магазин</div>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Кухня</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Ванная</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Проф.оборудование</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Прочее</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu-box">
+            <div class="footer-menu-title">Поддержка</div>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Сервисные центры</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Оплата и доставка</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Кредит и рассрочка</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu-box">
+            <div class="footer-menu-title">Для клиента</div>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Гарантии</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Горячая линия</a></li>
+              <li class="footer-menu-item"><a href="#" class="footer-menu-list-link">Возврат товара</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu-box footer-menu-info">
+            <ul class="footer-info">
+              <li class="footer-info-item">Официальный магазин
+                Smeg в Минске</li>
+              <li class="footer-info-item">+375291362544</li>
+              <li class="footer-info-item">Пн-Пт с 10,00 до 19,00
+                Вс - выходной</li>
+              <li class="footer-info-item">г.Минск, ул. Гоголя, 29</li>
+            </ul>
+          </div>
+        </div>
+        <a href="index.html" class="footer-logo">
+          <img src="images/footer-logo.png" alt="" class="footer-logo-img">
+        </a>
+        <div class="footer-social">
+          <a href="#" class="footer-social-item footer-vk">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9532 19.0346 25.2153 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2554 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26731 18.3462 8.45217 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51171 9.45268 8.78179 9.68624 8.93862 10.0714C9.48061 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7397 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.642 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1531 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a href="#" class="footer-social-item footer-inst">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.2953 29.9999C15.1959 29.9999 15.0966 29.9999 14.9966 29.9995C12.645 30.0052 10.4723 29.9455 8.35922 29.8168C6.42197 29.699 4.65363 29.0295 3.24509 27.881C1.88599 26.7727 0.95787 25.2742 0.486603 23.4276C0.0764466 21.8199 0.0547028 20.2418 0.0338745 18.7154C0.0187683 17.6202 0.00320435 16.3224 0 15.0027C0.00320435 13.6774 0.0187683 12.3797 0.0338745 11.2845C0.0547028 9.7583 0.0764466 8.18016 0.486603 6.57226C0.95787 4.72564 1.88599 3.22715 3.24509 2.11891C4.65363 0.970376 6.42197 0.300896 8.35945 0.183021C10.4725 0.0546186 12.6457 -0.00534845 15.0023 0.000373601C17.3545 -0.0046618 19.5266 0.0546186 21.6396 0.183021C23.5769 0.300896 25.3452 0.970376 26.7538 2.11891C28.1131 3.22715 29.041 4.72564 29.5123 6.57226C29.9224 8.17993 29.9442 9.7583 29.965 11.2845C29.9801 12.3797 29.9959 13.6774 29.9989 14.9972V15.0027C29.9959 16.3224 29.9801 17.6202 29.965 18.7154C29.9442 20.2416 29.9226 21.8197 29.5123 23.4276C29.041 25.2742 28.1131 26.7727 26.7538 27.881C25.3452 29.0295 23.5769 29.699 21.6396 29.8168C19.6161 29.94 17.5374 29.9999 15.2953 29.9999ZM14.9966 27.6557C17.3099 27.6612 19.4339 27.6029 21.4973 27.4774C22.9621 27.3884 24.2322 26.913 25.2727 26.0645C26.2344 25.2802 26.8968 24.198 27.2413 22.8481C27.5828 21.5098 27.6025 20.0729 27.6215 18.6833C27.6363 17.5955 27.6519 16.3068 27.6551 14.9999C27.6519 13.6928 27.6363 12.4044 27.6215 11.3165C27.6025 9.92699 27.5828 8.49007 27.2413 7.15156C26.8968 5.80162 26.2344 4.71946 25.2727 3.93508C24.2322 3.08685 22.9621 2.61146 21.4973 2.52242C19.4339 2.39677 17.3099 2.33886 15.0021 2.3439C12.6892 2.3384 10.565 2.39677 8.50159 2.52242C7.03674 2.61146 5.76668 3.08685 4.72618 3.93508C3.76442 4.71946 3.10204 5.80162 2.75757 7.15156C2.41608 8.49007 2.39639 9.92676 2.3774 11.3165C2.36252 12.4053 2.34695 13.6946 2.34375 15.0027C2.34695 16.305 2.36252 17.5945 2.3774 18.6833C2.39639 20.0729 2.41608 21.5098 2.75757 22.8481C3.10204 24.198 3.76442 25.2802 4.72618 26.0645C5.76668 26.9128 7.03674 27.3882 8.50159 27.4772C10.565 27.6029 12.6897 27.6615 14.9966 27.6557ZM14.9407 22.3242C10.9023 22.3242 7.6165 19.0386 7.6165 14.9999C7.6165 10.9613 10.9023 7.6757 14.9407 7.6757C18.9793 7.6757 22.2649 10.9613 22.2649 14.9999C22.2649 19.0386 18.9793 22.3242 14.9407 22.3242ZM14.9407 10.0195C12.1946 10.0195 9.96025 12.2538 9.96025 14.9999C9.96025 17.7461 12.1946 19.9804 14.9407 19.9804C17.6871 19.9804 19.9212 17.7461 19.9212 14.9999C19.9212 12.2538 17.6871 10.0195 14.9407 10.0195ZM23.0853 5.33195C22.1146 5.33195 21.3274 6.11885 21.3274 7.08977C21.3274 8.06068 22.1146 8.84758 23.0853 8.84758C24.0562 8.84758 24.8431 8.06068 24.8431 7.08977C24.8431 6.11885 24.0562 5.33195 23.0853 5.33195Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a href="#" class="footer-social-item footer-fb">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26.25 0H3.75C1.68187 0 0 1.68187 0 3.75V26.25C0 28.3181 1.68187 30 3.75 30H15V19.6875H11.25V15H15V11.25C15 8.14313 17.5181 5.625 20.625 5.625H24.375V10.3125H22.5C21.465 10.3125 20.625 10.215 20.625 11.25V15H25.3125L23.4375 19.6875H20.625V30H26.25C28.3181 30 30 28.3181 30 26.25V3.75C30 1.68187 28.3181 0 26.25 0Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a href="#" class="footer-social-item footer-ytb">
+            <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32.213 4.29874C31.8349 2.89303 30.7266 1.78492 29.3211 1.40641C26.7534 0.703857 16.4825 0.703857 16.4825 0.703857C16.4825 0.703857 6.21198 0.703857 3.6443 1.37977C2.26583 1.75789 1.13049 2.89323 0.752376 4.29874C0.0766602 6.86622 0.0766602 12.1909 0.0766602 12.1909C0.0766602 12.1909 0.0766602 17.5423 0.752376 20.083C1.13089 21.4885 2.23879 22.5966 3.6445 22.9751C6.23902 23.6778 16.4829 23.6778 16.4829 23.6778C16.4829 23.6778 26.7534 23.6778 29.3211 23.0019C30.7268 22.6236 31.8349 21.5155 32.2134 20.11C32.889 17.5423 32.889 12.2179 32.889 12.2179C32.889 12.2179 32.916 6.86622 32.213 4.29874ZM13.2125 17.1099V7.27177L21.7533 12.1909L13.2125 17.1099Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>
